@@ -1,0 +1,14 @@
+_topdomains()
+{
+	local top cur
+	[ -f /opt/top_domains.txt ] && top=$(cat /opt/top_domains.txt)
+   	cur="${COMP_WORDS[COMP_CWORD]}"
+	COMPREPLY=( $(compgen -W "$top" -- ${cur}) )
+	return 0
+}
+
+
+[ -f /opt/top_domains.txt ] && complete -F _topdomains curl mtr ping wget host dig 
+
+
+

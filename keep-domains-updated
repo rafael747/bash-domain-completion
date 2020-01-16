@@ -1,0 +1,5 @@
+#!/bin/bash
+
+which curl > /dev/null || exit 1
+
+curl -s "https://raw.githubusercontent.com/rafael747/bash-domain-completion/master/top_domains.txt" -o /opt/top_domains.txt
