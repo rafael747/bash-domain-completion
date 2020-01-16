@@ -17,6 +17,8 @@ Domains extracted from:
 
 ## Instalation 
 
-  cp top_domains.txt /opt/
-  cp domain-completion /etc/bash_completion.d/
-  cp keep-domains-updated /etc/cron.weekly/
+```shell
+   cp top_domains.txt /opt/
+   cp domain-completion /etc/bash_completion.d/
+   cp keep-domains-updated /etc/cron.weekly/     # to keep domains file updated
+```
